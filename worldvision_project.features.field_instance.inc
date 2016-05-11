@@ -10,6 +10,166 @@
 function worldvision_project_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'field_collection_item-field_country_context-field_country_context_icon'.
+  $field_instances['field_collection_item-field_country_context-field_country_context_icon'] = array(
+    'bundle' => 'field_country_context',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_country_context_icon',
+    'label' => 'Icono contexto',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_country_context-field_country_context_text'.
+  $field_instances['field_collection_item-field_country_context-field_country_context_text'] = array(
+    'bundle' => 'field_country_context',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_country_context_text',
+    'label' => 'Texto contexto',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_nuestro_trabajo-field_wv_work_image'.
+  $field_instances['field_collection_item-field_nuestro_trabajo-field_wv_work_image'] = array(
+    'bundle' => 'field_nuestro_trabajo',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_wv_work_image',
+    'label' => 'WV Work Image',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_nuestro_trabajo-field_wv_work_text'.
+  $field_instances['field_collection_item-field_nuestro_trabajo-field_wv_work_text'] = array(
+    'bundle' => 'field_nuestro_trabajo',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_wv_work_text',
+    'label' => 'WV Work Text',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-worldvision_project-body'.
   $field_instances['node-worldvision_project-body'] = array(
     'bundle' => 'worldvision_project',
@@ -168,7 +328,7 @@ function worldvision_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_coat_of_arms',
     'label' => 'Escudo',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -229,6 +389,49 @@ function worldvision_project_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-worldvision_project-field_country_context'.
+  $field_instances['node-worldvision_project-field_country_context'] = array(
+    'bundle' => 'worldvision_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_country_context',
+    'label' => 'Contexto Proyecto',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 42,
     ),
   );
 
@@ -472,56 +675,6 @@ function worldvision_project_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-worldvision_project-field_icono_contexto'.
-  $field_instances['node-worldvision_project-field_icono_contexto'] = array(
-    'bundle' => 'worldvision_project',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_icono_contexto',
-    'label' => 'Icono contexto',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-worldvision_project-field_image'.
   $field_instances['node-worldvision_project-field_image'] = array(
     'bundle' => 'worldvision_project',
@@ -529,7 +682,7 @@ function worldvision_project_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -618,8 +771,8 @@ function worldvision_project_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-worldvision_project-field_texto_contexto'.
-  $field_instances['node-worldvision_project-field_texto_contexto'] = array(
+  // Exported field_instance: 'node-worldvision_project-field_nuestro_trabajo'.
+  $field_instances['node-worldvision_project-field_nuestro_trabajo'] = array(
     'bundle' => 'worldvision_project',
     'default_value' => NULL,
     'deleted' => 0,
@@ -627,52 +780,16 @@ function worldvision_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 17,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_texto_contexto',
-    'label' => 'Texto Contexto',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-worldvision_project-field_wv_work_image'.
-  $field_instances['node-worldvision_project-field_wv_work_image'] = array(
-    'bundle' => 'worldvision_project',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
+        'module' => 'field_collection',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
         ),
-        'type' => 'image',
-        'weight' => 14,
+        'type' => 'field_collection_view',
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -682,69 +799,18 @@ function worldvision_project_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_wv_work_image',
-    'label' => 'WV Work Image',
-    'required' => 1,
+    'field_name' => 'field_nuestro_trabajo',
+    'label' => 'Nuestro trabajo',
+    'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 13,
-    ),
-  );
-
-  // Exported field_instance: 'node-worldvision_project-field_wv_work_text'.
-  $field_instances['node-worldvision_project-field_wv_work_text'] = array(
-    'bundle' => 'worldvision_project',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 15,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_wv_work_text',
-    'label' => 'WV Work Text',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 15,
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 41,
     ),
   );
 
@@ -752,6 +818,7 @@ function worldvision_project_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Bandera');
   t('Capital');
+  t('Contexto Proyecto');
   t('Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="">The World Factbook</a> de la CIA.');
   t('Escudo');
   t('Esperanza de vida');
@@ -759,10 +826,11 @@ function worldvision_project_field_default_field_instances() {
   t('Imagen destacada');
   t('Introducción');
   t('Mapa de localización');
+  t('Nuestro trabajo');
   t('Población');
   t('Tasa VIH');
   t('Tasa de mortalidad infantil');
-  t('Texto Contexto');
+  t('Texto contexto');
   t('Un día en la vida de un niño');
   t('WV Work Image');
   t('WV Work Text');

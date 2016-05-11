@@ -23,22 +23,16 @@ function worldvision_project_field_group_info() {
     'label' => 'Contexto',
     'weight' => '5',
     'children' => array(
-      0 => 'field_icono_contexto',
-      1 => 'field_texto_contexto',
+      0 => 'field_country_context',
     ),
-    'format_type' => 'field_group_multiple_table',
+    'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'open',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
         'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
         'classes' => '',
         'required_fields' => 1,
-        'row_titles' => '',
+        'id' => '',
       ),
     ),
   );
@@ -93,21 +87,16 @@ function worldvision_project_field_group_info() {
     'label' => 'Nuestro Trabajo',
     'weight' => '6',
     'children' => array(
-      0 => 'field_wv_work_image',
-      1 => 'field_wv_work_text',
+      0 => 'field_nuestro_trabajo',
     ),
-    'format_type' => 'field_group_multiple_container',
+    'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'open',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
         'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'parent_format_type' => 'div',
         'classes' => '',
         'required_fields' => 1,
+        'id' => '',
       ),
     ),
   );
