@@ -21,7 +21,7 @@ function worldvision_project_node_info() {
     'worldvision_project' => array(
       'name' => t('Project'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>projects</em> for countries where <strong>World Vision</strong> is present.'),
       'has_title' => '1',
       'title_label' => t('Nombre del país'),
       'help' => '',

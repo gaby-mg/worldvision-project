@@ -261,7 +261,7 @@ function worldvision_project_field_default_field_instances() {
     'bundle' => 'worldvision_project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Busca la tasa de mortalidad infantil en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_infant_mortality_rate">Wikipedia - List of countries by infant mortality rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -330,14 +330,14 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Escudo',
     'required' => 1,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
+      'file_extensions' => 'png gif',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
+      'min_resolution' => '150x1',
+      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -357,7 +357,7 @@ function worldvision_project_field_default_field_instances() {
     'bundle' => 'worldvision_project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Busca la capital en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -439,7 +439,7 @@ function worldvision_project_field_default_field_instances() {
   $field_instances['node-worldvision_project-field_country_flag'] = array(
     'bundle' => 'worldvision_project',
     'deleted' => 0,
-    'description' => 'Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="">The World Factbook</a> de la CIA.',
+    'description' => 'Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -469,7 +469,7 @@ function worldvision_project_field_default_field_instances() {
       'file_extensions' => 'gif',
       'max_filesize' => '100 KB',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '150x1',
       'title_field' => 1,
       'user_register_form' => FALSE,
     ),
@@ -516,10 +516,10 @@ function worldvision_project_field_default_field_instances() {
       'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
+      'file_extensions' => 'png gif',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '300x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -541,7 +541,7 @@ function worldvision_project_field_default_field_instances() {
     'bundle' => 'worldvision_project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Busca la población en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -660,7 +660,7 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Índice desarrollo humano',
     'required' => 1,
     'settings' => array(
-      'max' => 1,
+      'max' => '',
       'min' => 0,
       'prefix' => '',
       'suffix' => '',
@@ -703,13 +703,13 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Imagen destacada',
     'required' => 1,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
+      'file_extensions' => 'jpg jpeg',
+      'max_filesize' => '1 MB',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '1170x1',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -730,7 +730,7 @@ function worldvision_project_field_default_field_instances() {
     'bundle' => 'worldvision_project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Busca la esperanza de vida en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy">Wikipedia - List of Countries by Life Expectancy</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -817,9 +817,13 @@ function worldvision_project_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Bandera');
+  t('Busca la capital en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.');
+  t('Busca la esperanza de vida en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy">Wikipedia - List of Countries by Life Expectancy</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
+  t('Busca la población en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.');
+  t('Busca la tasa de mortalidad infantil en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_infant_mortality_rate">Wikipedia - List of countries by infant mortality rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
   t('Capital');
   t('Contexto Proyecto');
-  t('Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="">The World Factbook</a> de la CIA.');
+  t('Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.');
   t('Escudo');
   t('Esperanza de vida');
   t('Icono contexto');
