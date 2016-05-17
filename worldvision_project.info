@@ -9,6 +9,7 @@ dependencies[] = field_collection
 dependencies[] = field_group
 dependencies[] = field_group_multiple
 dependencies[] = image
+dependencies[] = media
 dependencies[] = number
 dependencies[] = text
 features[ctools][] = field_group:field_group:1

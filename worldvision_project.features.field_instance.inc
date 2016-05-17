@@ -36,10 +36,10 @@ function worldvision_project_field_default_field_instances() {
       'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
+      'file_extensions' => 'gif',
       'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
+      'max_resolution' => '64x64',
+      'min_resolution' => '32x32',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -306,7 +306,7 @@ function worldvision_project_field_default_field_instances() {
   $field_instances['node-worldvision_project-field_coat_of_arms'] = array(
     'bundle' => 'worldvision_project',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -333,7 +333,7 @@ function worldvision_project_field_default_field_instances() {
       'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif',
+      'file_extensions' => 'svg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '150x1',
@@ -342,12 +342,21 @@ function worldvision_project_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          0 => 0,
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 4,
     ),
   );
@@ -439,7 +448,7 @@ function worldvision_project_field_default_field_instances() {
   $field_instances['node-worldvision_project-field_country_flag'] = array(
     'bundle' => 'worldvision_project',
     'deleted' => 0,
-    'description' => 'Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.',
+    'description' => 'Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -465,8 +474,8 @@ function worldvision_project_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
-      'file_directory' => 'banderas',
-      'file_extensions' => 'gif',
+      'file_directory' => '',
+      'file_extensions' => 'svg',
       'max_filesize' => '100 KB',
       'max_resolution' => '',
       'min_resolution' => '150x1',
@@ -475,12 +484,21 @@ function worldvision_project_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          0 => 0,
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 3,
     ),
   );
@@ -516,7 +534,7 @@ function worldvision_project_field_default_field_instances() {
       'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif',
+      'file_extensions' => 'svg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '300x300',
@@ -525,12 +543,20 @@ function worldvision_project_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 5,
     ),
   );
@@ -823,7 +849,7 @@ function worldvision_project_field_default_field_instances() {
   t('Busca la tasa de mortalidad infantil en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_infant_mortality_rate">Wikipedia - List of countries by infant mortality rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
   t('Capital');
   t('Contexto Proyecto');
-  t('Descargue la imagen correspondiente en <a href="http://www.flags.net/">flags.net</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.');
+  t('Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>');
   t('Escudo');
   t('Esperanza de vida');
   t('Icono contexto');

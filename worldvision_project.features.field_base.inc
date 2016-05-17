@@ -332,7 +332,7 @@ function worldvision_project_field_default_field_bases() {
   // Exported field_base: 'field_wv_work_image'.
   $field_bases['field_wv_work_image'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_wv_work_image',
@@ -354,7 +354,7 @@ function worldvision_project_field_default_field_bases() {
   // Exported field_base: 'field_wv_work_text'.
   $field_bases['field_wv_work_text'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_wv_work_text',
