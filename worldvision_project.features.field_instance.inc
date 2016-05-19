@@ -156,17 +156,17 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'WV Work Text',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 5,
       ),
-      'type' => 'text_textfield',
-      'weight' => 4,
+      'type' => 'text_textarea',
+      'weight' => 3,
     ),
   );
 
@@ -241,7 +241,7 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Un día en la vida de un niño',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
