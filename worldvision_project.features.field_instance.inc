@@ -290,7 +290,7 @@ function worldvision_project_field_default_field_instances() {
       'max' => 100,
       'min' => 0,
       'prefix' => '',
-      'suffix' => '',
+      'suffix' => '%',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -597,7 +597,7 @@ function worldvision_project_field_default_field_instances() {
       'max' => '',
       'min' => '',
       'prefix' => '',
-      'suffix' => '',
+      'suffix' => 'habitantes',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -643,7 +643,7 @@ function worldvision_project_field_default_field_instances() {
       'max' => 100,
       'min' => 0,
       'prefix' => '',
-      'suffix' => '',
+      'suffix' => '%',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -786,7 +786,7 @@ function worldvision_project_field_default_field_instances() {
       'max' => 100,
       'min' => 30,
       'prefix' => '',
-      'suffix' => '',
+      'suffix' => 'años',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
