@@ -11,6 +11,7 @@ dependencies[] = field_group_multiple
 dependencies[] = image
 dependencies[] = media
 dependencies[] = number
+dependencies[] = svgimg
 dependencies[] = text
 features[ctools][] = field_group:field_group:1
 features[features_api][] = api:2
