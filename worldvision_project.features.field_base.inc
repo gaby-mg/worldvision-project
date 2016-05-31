@@ -82,13 +82,14 @@ function worldvision_project_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'file',
     'settings' => array(
-      'default_image' => 0,
+      'display_default' => 0,
+      'display_field' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_country_capital'.
@@ -147,13 +148,14 @@ function worldvision_project_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'file',
     'settings' => array(
-      'default_image' => 0,
+      'display_default' => 0,
+      'display_field' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_country_context_text'.
@@ -188,13 +190,14 @@ function worldvision_project_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'file',
     'settings' => array(
-      'default_image' => 0,
+      'display_default' => 0,
+      'display_field' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_country_location'.
@@ -210,13 +213,14 @@ function worldvision_project_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'file',
     'settings' => array(
-      'default_image' => 0,
+      'display_default' => 0,
+      'display_field' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_country_population'.
@@ -232,6 +236,29 @@ function worldvision_project_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_featured_image'.
+  $field_bases['field_featured_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_featured_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_hiv_rate'.
@@ -342,13 +369,14 @@ function worldvision_project_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'file',
     'settings' => array(
-      'default_image' => 0,
+      'display_default' => 0,
+      'display_field' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_wv_work_text'.

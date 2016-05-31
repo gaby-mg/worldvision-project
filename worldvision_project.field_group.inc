@@ -80,11 +80,11 @@ function worldvision_project_field_group_info() {
     'children' => array(
       0 => 'field_child_mortality_rate',
       1 => 'field_country_capital',
-      2 => 'field_country_flag',
-      3 => 'field_country_population',
-      4 => 'field_hiv_rate',
-      5 => 'field_human_development_index',
-      6 => 'field_life_expectancy',
+      2 => 'field_country_population',
+      3 => 'field_hiv_rate',
+      4 => 'field_human_development_index',
+      5 => 'field_life_expectancy',
+      6 => 'field_country_flag',
       7 => 'field_coat_of_arms',
       8 => 'field_country_location',
     ),
@@ -104,6 +104,34 @@ function worldvision_project_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_country_private_data|node|worldvision_project|form';
+  $field_group->group_name = 'group_country_private_data';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'worldvision_project';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_country_data';
+  $field_group->data = array(
+    'label' => 'Área privada',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_featured_video',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'label' => 'Área privada',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => 'group-country-private-data field-group-htab',
+        'description' => '',
+      ),
+      'formatter' => 'closed',
+    ),
+  );
+  $field_groups['group_country_private_data|node|worldvision_project|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_country_public_data|node|worldvision_project|form';
   $field_group->group_name = 'group_country_public_data';
   $field_group->entity_type = 'node';
@@ -115,8 +143,8 @@ function worldvision_project_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'body',
-      1 => 'field_image',
-      2 => 'field_child_day',
+      1 => 'field_child_day',
+      2 => 'field_featured_image',
       3 => 'title',
       4 => 'group_country_infobox',
       5 => 'group_country_wv_work',
@@ -169,6 +197,7 @@ function worldvision_project_field_group_info() {
   t('Datos públicos');
   t('Infobox');
   t('Nuestro Trabajo');
+  t('Área privada');
 
   return $field_groups;
 }
