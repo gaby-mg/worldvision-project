@@ -48,6 +48,7 @@ function worldvision_project_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'imce_filefield_on' => 0,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -129,6 +130,7 @@ function worldvision_project_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'imce_filefield_on' => 0,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -243,7 +245,7 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Un día en la vida de un niño',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -666,6 +668,7 @@ function worldvision_project_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'upload' => 0,
         ),
+        'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
       'weight' => 3,
