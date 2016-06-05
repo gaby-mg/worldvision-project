@@ -174,51 +174,6 @@ function worldvision_project_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-worldvision_project-body'.
-  $field_instances['node-worldvision_project-body'] = array(
-    'bundle' => 'worldvision_project',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Introducción',
-    'required' => 1,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-worldvision_project-field_child_day'.
   $field_instances['node-worldvision_project-field_child_day'] = array(
     'bundle' => 'worldvision_project',
@@ -231,7 +186,7 @@ function worldvision_project_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -277,7 +232,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 5,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -314,13 +269,12 @@ function worldvision_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
-        'weight' => 12,
+        'type' => 'file_rendered',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -334,15 +288,10 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Escudo',
     'required' => 1,
     'settings' => array(
-      'alt_field' => 1,
-      'default_image' => 0,
       'description_field' => 0,
       'file_directory' => '',
       'file_extensions' => 'svg',
       'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '150x1',
-      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -353,14 +302,16 @@ function worldvision_project_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
-          0 => 0,
           'audio' => 0,
-          'default' => 0,
+          'document' => 0,
           'image' => 'image',
           'video' => 0,
         ),
-        'browser_plugins' => array(),
-        'progress_indicator' => 'throbber',
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 'upload',
+        ),
       ),
       'type' => 'media_generic',
       'weight' => 4,
@@ -379,7 +330,7 @@ function worldvision_project_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -425,7 +376,7 @@ function worldvision_project_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 20,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -458,13 +409,12 @@ function worldvision_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
-        'weight' => 1,
+        'type' => 'file_rendered',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -478,15 +428,10 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Bandera',
     'required' => 1,
     'settings' => array(
-      'alt_field' => 1,
-      'default_image' => 0,
       'description_field' => 0,
       'file_directory' => '',
       'file_extensions' => 'svg',
       'max_filesize' => '100 KB',
-      'max_resolution' => '',
-      'min_resolution' => '150x1',
-      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -497,14 +442,16 @@ function worldvision_project_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
-          0 => 0,
           'audio' => 0,
-          'default' => 0,
+          'document' => 0,
           'image' => 'image',
           'video' => 0,
         ),
-        'browser_plugins' => array(),
-        'progress_indicator' => 'throbber',
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 'upload',
+        ),
       ),
       'type' => 'media_generic',
       'weight' => 3,
@@ -515,17 +462,16 @@ function worldvision_project_field_default_field_instances() {
   $field_instances['node-worldvision_project-field_country_location'] = array(
     'bundle' => 'worldvision_project',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
-        'weight' => 18,
+        'type' => 'file_rendered',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -539,15 +485,10 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Mapa de localización',
     'required' => 1,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'svg',
-      'max_filesize' => '3 MB',
-      'max_resolution' => '',
-      'min_resolution' => '300x300',
-      'title_field' => 0,
+      'file_extensions' => 'svg png',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -558,14 +499,16 @@ function worldvision_project_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
-          0 => 0,
           'audio' => 0,
-          'default' => 0,
+          'document' => 0,
           'image' => 'image',
           'video' => 0,
         ),
-        'browser_plugins' => array(),
-        'progress_indicator' => 'throbber',
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 'upload',
+        ),
       ),
       'type' => 'media_generic',
       'weight' => 5,
@@ -590,7 +533,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 3,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -626,11 +569,13 @@ function worldvision_project_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 25,
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -644,7 +589,7 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Imagen destacada',
     'required' => 1,
     'settings' => array(
-      'description_field' => 0,
+      'description_field' => 1,
       'file_directory' => '',
       'file_extensions' => 'jpg jpeg',
       'max_filesize' => '',
@@ -666,9 +611,8 @@ function worldvision_project_field_default_field_instances() {
         'browser_plugins' => array(
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
-          'upload' => 0,
+          'upload' => 'upload',
         ),
-        'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
       'weight' => 3,
@@ -686,7 +630,7 @@ function worldvision_project_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 24,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -745,7 +689,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -792,7 +736,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 7,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -838,7 +782,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -885,7 +829,7 @@ function worldvision_project_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 19,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -924,7 +868,6 @@ function worldvision_project_field_default_field_instances() {
   t('Esperanza de vida');
   t('Icono contexto');
   t('Imagen destacada');
-  t('Introducción');
   t('Mapa de localización');
   t('Nuestro trabajo');
   t('Población');
