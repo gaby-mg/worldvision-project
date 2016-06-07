@@ -589,7 +589,7 @@ function worldvision_project_field_default_field_instances() {
     'bundle' => 'worldvision_project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Busca la tasa de VIH en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_HIV/AIDS_adult_prevalence_rate">Wikipedia -List of countries by HIV/AIDS adult prevalence rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -613,7 +613,7 @@ function worldvision_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_hiv_rate',
     'label' => 'Tasa VIH',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'max' => 100,
       'min' => 0,
@@ -862,6 +862,7 @@ function worldvision_project_field_default_field_instances() {
   t('Busca la capital en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.');
   t('Busca la esperanza de vida en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy">Wikipedia - List of Countries by Life Expectancy</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
   t('Busca la población en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA.');
+  t('Busca la tasa de VIH en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_HIV/AIDS_adult_prevalence_rate">Wikipedia -List of countries by HIV/AIDS adult prevalence rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
   t('Busca la tasa de mortalidad infantil en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_infant_mortality_rate">Wikipedia - List of countries by infant mortality rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
   t('Capital');
   t('Contexto Proyecto');
