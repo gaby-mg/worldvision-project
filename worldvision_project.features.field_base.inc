@@ -295,6 +295,28 @@ function worldvision_project_field_default_field_bases() {
     'type' => 'number_float',
   );
 
+  // Exported field_base: 'field_image'.
+  $field_bases['field_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
   // Exported field_base: 'field_life_expectancy'.
   $field_bases['field_life_expectancy'] = array(
     'active' => 1,
@@ -312,68 +334,40 @@ function worldvision_project_field_default_field_bases() {
     'type' => 'number_float',
   );
 
-  // Exported field_base: 'field_nuestro_trabajo'.
-  $field_bases['field_nuestro_trabajo'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nuestro_trabajo',
-    'indexes' => array(
-      'revision_id' => array(
-        0 => 'revision_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_wv_work_image'.
-  $field_bases['field_wv_work_image'] = array(
+  // Exported field_base: 'field_wv_work_project'.
+  $field_bases['field_wv_work_project'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_wv_work_image',
+    'field_name' => 'field_wv_work_project',
     'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
+      'nid' => array(
+        0 => 'nid',
       ),
     ),
     'locked' => 0,
-    'module' => 'file',
+    'module' => 'node_reference',
     'settings' => array(
-      'display_default' => 0,
-      'display_field' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'file',
-  );
-
-  // Exported field_base: 'field_wv_work_text'.
-  $field_bases['field_wv_work_text'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_wv_work_text',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'referenceable_types' => array(
+        'actualidad' => 0,
+        'article' => 0,
+        'child' => 0,
+        'donation_center' => 0,
+        'page' => 0,
+        'panel' => 0,
+        'staff' => 0,
+        'worldvision_project' => 'worldvision_project',
+        'worldvision_work_area' => 0,
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
       ),
     ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'node_reference',
   );
 
   return $field_bases;
