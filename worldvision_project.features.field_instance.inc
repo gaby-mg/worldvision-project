@@ -186,10 +186,12 @@ function worldvision_project_field_default_field_instances() {
     'description' => 'Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
         'weight' => 16,
       ),
       'teaser' => array(
@@ -324,10 +326,12 @@ function worldvision_project_field_default_field_instances() {
     'description' => 'Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
         'weight' => 15,
       ),
       'teaser' => array(
@@ -379,10 +383,12 @@ function worldvision_project_field_default_field_instances() {
     'description' => 'Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
         'weight' => 17,
       ),
       'teaser' => array(
