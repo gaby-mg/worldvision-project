@@ -53,9 +53,17 @@ function worldvision_project_default_page_manager_handlers() {
       'default' => NULL,
       'top' => NULL,
       'left' => NULL,
-      'middle' => NULL,
+      'middle' => array(
+        'column_type' => 'col',
+        'column_size' => '12',
+        'offset_type' => 'col-lg-offset',
+        'offset_size' => '0',
+      ),
       'right' => NULL,
       'bottom' => NULL,
+    ),
+    'middle' => array(
+      'style' => 'bootstrap_region',
     ),
   );
   $display->cache = array();
