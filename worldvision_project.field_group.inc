@@ -21,7 +21,7 @@ function worldvision_project_field_group_info() {
   $field_group->parent_name = 'group_country_public_data';
   $field_group->data = array(
     'label' => 'Contexto',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
       0 => 'field_country_context',
     ),
@@ -76,7 +76,7 @@ function worldvision_project_field_group_info() {
   $field_group->parent_name = 'group_country_public_data';
   $field_group->data = array(
     'label' => 'Infobox',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'field_child_mortality_rate',
       1 => 'field_country_capital',
