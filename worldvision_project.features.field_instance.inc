@@ -104,7 +104,7 @@ function worldvision_project_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -150,7 +150,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -175,7 +175,7 @@ function worldvision_project_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 58,
+      'weight' => 67,
     ),
   );
 
@@ -187,12 +187,13 @@ function worldvision_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'image',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'image_link' => '',
+          'image_style' => '',
         ),
-        'type' => 'file_rendered',
-        'weight' => 11,
+        'type' => 'image',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -206,10 +207,14 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Escudo',
     'required' => 1,
     'settings' => array(
-      'description_field' => 0,
+      'alt_field' => 0,
+      'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png',
+      'file_extensions' => 'svg',
       'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -232,7 +237,7 @@ function worldvision_project_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 53,
+      'weight' => 62,
     ),
   );
 
@@ -248,7 +253,7 @@ function worldvision_project_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -272,7 +277,7 @@ function worldvision_project_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 55,
+      'weight' => 64,
     ),
   );
 
@@ -294,7 +299,7 @@ function worldvision_project_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -327,12 +332,13 @@ function worldvision_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'image',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'image_link' => '',
+          'image_style' => '',
         ),
-        'type' => 'file_rendered',
-        'weight' => 10,
+        'type' => 'image',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -346,10 +352,14 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Bandera',
     'required' => 1,
     'settings' => array(
-      'description_field' => 0,
+      'alt_field' => 0,
+      'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png',
+      'file_extensions' => 'svg',
       'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -372,7 +382,7 @@ function worldvision_project_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 52,
+      'weight' => 61,
     ),
   );
 
@@ -384,12 +394,13 @@ function worldvision_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'image',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'image_link' => '',
+          'image_style' => '',
         ),
-        'type' => 'file_rendered',
-        'weight' => 12,
+        'type' => 'image',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -403,10 +414,14 @@ function worldvision_project_field_default_field_instances() {
     'label' => 'Mapa de localización',
     'required' => 1,
     'settings' => array(
-      'description_field' => 0,
+      'alt_field' => 0,
+      'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png',
+      'file_extensions' => 'png svg',
       'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -429,7 +444,7 @@ function worldvision_project_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 54,
+      'weight' => 63,
     ),
   );
 
@@ -451,7 +466,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -476,7 +491,7 @@ function worldvision_project_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 56,
+      'weight' => 65,
     ),
   );
 
@@ -553,7 +568,7 @@ function worldvision_project_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 9,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -612,7 +627,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 5,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -637,7 +652,7 @@ function worldvision_project_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 59,
+      'weight' => 68,
     ),
   );
 
@@ -659,7 +674,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -684,7 +699,7 @@ function worldvision_project_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 60,
+      'weight' => 69,
     ),
   );
 
@@ -705,7 +720,7 @@ function worldvision_project_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 3,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -730,7 +745,7 @@ function worldvision_project_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 57,
+      'weight' => 66,
     ),
   );
 
