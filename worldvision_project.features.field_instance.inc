@@ -128,7 +128,7 @@ function worldvision_project_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -278,6 +278,46 @@ function worldvision_project_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 64,
+    ),
+  );
+
+  // Exported field_instance: 'node-worldvision_project-field_country_code'.
+  $field_instances['node-worldvision_project-field_country_code'] = array(
+    'bundle' => 'worldvision_project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_country_code',
+    'label' => 'Código del país',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
   );
 
@@ -502,14 +542,14 @@ function worldvision_project_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'featured_image_1200x300',
+          'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -529,7 +569,7 @@ function worldvision_project_field_default_field_instances() {
       'file_extensions' => 'jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '1200x300',
+      'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -749,6 +789,68 @@ function worldvision_project_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-worldvision_project-field_private_gallery'.
+  $field_instances['node-worldvision_project-field_private_gallery'] = array(
+    'bundle' => 'worldvision_project',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_private_gallery',
+    'label' => 'Galería Privada',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 45,
+    ),
+  );
+
   // Exported field_instance: 'node-worldvision_work_area-body'.
   $field_instances['node-worldvision_work_area-body'] = array(
     'bundle' => 'worldvision_work_area',
@@ -892,9 +994,11 @@ function worldvision_project_field_default_field_instances() {
   t('Busca la tasa de mortalidad infantil en la página <a href="https://en.wikipedia.org/wiki/List_of_countries_by_infant_mortality_rate">Wikipedia - List of countries by infant mortality rate</a> o en <a href="https://www.cia.gov/library/publications/the-world-factbook/">The World Factbook</a> de la CIA');
   t('Capital');
   t('Contexto Proyecto');
+  t('Código del país');
   t('Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>');
   t('Escudo');
   t('Esperanza de vida');
+  t('Galería Privada');
   t('Icono contexto');
   t('Image');
   t('Imagen destacada');

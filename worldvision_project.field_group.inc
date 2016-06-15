@@ -21,7 +21,7 @@ function worldvision_project_field_group_info() {
   $field_group->parent_name = 'group_country_public_data';
   $field_group->data = array(
     'label' => 'Contexto',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_country_context',
     ),
@@ -76,7 +76,7 @@ function worldvision_project_field_group_info() {
   $field_group->parent_name = 'group_country_public_data';
   $field_group->data = array(
     'label' => 'Infobox',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_child_mortality_rate',
       1 => 'field_country_capital',
@@ -115,6 +115,7 @@ function worldvision_project_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'field_featured_video',
+      1 => 'field_private_gallery',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -143,10 +144,11 @@ function worldvision_project_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_child_day',
-      1 => 'field_featured_image',
-      2 => 'title',
-      3 => 'group_country_infobox',
-      4 => 'group_country_context',
+      1 => 'field_country_code',
+      2 => 'field_featured_image',
+      3 => 'title',
+      4 => 'group_country_infobox',
+      5 => 'group_country_context',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
