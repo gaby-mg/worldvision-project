@@ -542,11 +542,11 @@ function worldvision_project_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'featured_image_1200x300',
         ),
         'type' => 'image',
         'weight' => 15,
