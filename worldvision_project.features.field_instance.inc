@@ -941,6 +941,43 @@ function worldvision_project_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-worldvision_work_area-field_use'.
+  $field_instances['node-worldvision_work_area-field_use'] = array(
+    'bundle' => 'worldvision_work_area',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_use',
+    'label' => 'Uso',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 2,
     ),
   );
@@ -979,7 +1016,7 @@ function worldvision_project_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -1009,6 +1046,7 @@ function worldvision_project_field_default_field_instances() {
   t('Tasa de mortalidad infantil');
   t('Texto contexto');
   t('Un día en la vida de un niño');
+  t('Uso');
   t('Video destacado');
   t('Índice desarrollo humano');
 
