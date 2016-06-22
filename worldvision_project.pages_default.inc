@@ -89,7 +89,10 @@ function worldvision_project_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'col-xs-12',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -104,13 +107,18 @@ function worldvision_project_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Nuestro trabajo',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'col-xs-12',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
