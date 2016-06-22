@@ -75,6 +75,13 @@ function worldvision_project_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'worldvision_work_area' => 'worldvision_work_area',
   );
+  /* Filter criterion: Content: Uso (field_use) */
+  $handler->display->display_options['filters']['field_use_value']['id'] = 'field_use_value';
+  $handler->display->display_options['filters']['field_use_value']['table'] = 'field_data_field_use';
+  $handler->display->display_options['filters']['field_use_value']['field'] = 'field_use_value';
+  $handler->display->display_options['filters']['field_use_value']['value'] = array(
+    'worldvision_project' => 'worldvision_project',
+  );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
