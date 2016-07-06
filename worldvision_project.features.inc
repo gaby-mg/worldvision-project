@@ -42,7 +42,14 @@ function worldvision_project_node_info() {
       'description' => t('Use <em>work areas</em> for different <strong>works</strong> that World Vision does in any of the <em>Projects</em>'),
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('El tipo de contenido <strong>Work Area</strong> tiene cuatro campos obligatorios:
+
+<ul>
+<li>Título</li>
+<li>Uso: Aquí especificamos en qué lugares de nuestro sitio web aparece el área de trabajo (página de proyecto, página de niño o área privada)</li>
+<li>Imagen</li>
+<li>Proyecto: En qué proyecto o proyectos se realiza este área de trabajo</li>
+</ul>'),
     ),
   );
   drupal_alter('node_info', $items);
