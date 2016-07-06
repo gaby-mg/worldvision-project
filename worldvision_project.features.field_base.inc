@@ -375,6 +375,7 @@ function worldvision_project_field_default_field_bases() {
       'allowed_values' => array(
         'worldvision_project' => 'Página de proyecto',
         'worldvision_child' => 'Página de niño/a',
+        'worldvision_private_area' => 'Área de padrino o donante',
       ),
       'allowed_values_function' => '',
       'profile2_private' => FALSE,
