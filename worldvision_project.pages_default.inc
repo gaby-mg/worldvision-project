@@ -60,6 +60,7 @@ function worldvision_project_default_page_manager_handlers() {
       'left' => NULL,
       'bottom' => NULL,
       'right' => NULL,
+      'middle' => NULL,
     ),
     'middle' => array(
       'style' => '-1',
@@ -331,7 +332,7 @@ function worldvision_project_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'inline',
       'formatter' => 'number_decimal',
       'delta_limit' => 0,
       'delta_offset' => '0',
