@@ -115,7 +115,7 @@ function worldvision_project_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'field_featured_video',
-      1 => 'field_private_gallery',
+      1 => 'field_image_gallery',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

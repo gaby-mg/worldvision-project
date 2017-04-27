@@ -619,13 +619,13 @@ function worldvision_project_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_featured_video',
-    'label' => 'Video destacado',
-    'required' => 0,
+    'label' => 'Galería de vídeos',
+    'required' => 1,
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
       'file_extensions' => 'mp4',
-      'max_filesize' => '',
+      'max_filesize' => '10 MB',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -634,19 +634,23 @@ function worldvision_project_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
+          'youtube' => 0,
         ),
         'allowed_types' => array(
-          0 => 0,
           'audio' => 0,
-          'default' => 0,
-          'image' => 'image',
-          'video' => 0,
+          'document' => 0,
+          'image' => 0,
+          'video' => 'video',
         ),
-        'browser_plugins' => array(),
-        'progress_indicator' => 'throbber',
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
       ),
       'type' => 'media_generic',
-      'weight' => 44,
+      'weight' => 71,
     ),
   );
 
@@ -743,6 +747,63 @@ function worldvision_project_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-worldvision_project-field_image_gallery'.
+  $field_instances['node-worldvision_project-field_image_gallery'] = array(
+    'bundle' => 'worldvision_project',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image_gallery',
+    'label' => 'Galería de imágenes',
+    'required' => 1,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 70,
+    ),
+  );
+
   // Exported field_instance: 'node-worldvision_project-field_life_expectancy'.
   $field_instances['node-worldvision_project-field_life_expectancy'] = array(
     'bundle' => 'worldvision_project',
@@ -786,68 +847,6 @@ function worldvision_project_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 66,
-    ),
-  );
-
-  // Exported field_instance: 'node-worldvision_project-field_private_gallery'.
-  $field_instances['node-worldvision_project-field_private_gallery'] = array(
-    'bundle' => 'worldvision_project',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_private_gallery',
-    'label' => 'Galería Privada',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 45,
     ),
   );
 
@@ -1035,7 +1034,8 @@ function worldvision_project_field_default_field_instances() {
   t('Descargue la imagen correspondiente en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>');
   t('Escudo');
   t('Esperanza de vida');
-  t('Galería Privada');
+  t('Galería de imágenes');
+  t('Galería de vídeos');
   t('Icono contexto');
   t('Image');
   t('Imagen destacada');
@@ -1047,7 +1047,6 @@ function worldvision_project_field_default_field_instances() {
   t('Texto contexto');
   t('Un día en la vida de un niño');
   t('Uso');
-  t('Video destacado');
   t('Índice desarrollo humano');
 
   return $field_instances;
