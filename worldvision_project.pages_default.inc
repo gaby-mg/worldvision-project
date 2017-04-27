@@ -59,14 +59,19 @@ function worldvision_project_default_page_manager_handlers() {
       ),
       'left' => NULL,
       'bottom' => NULL,
-      'right' => NULL,
+      'right' => array(
+        'column_type' => 'col-md',
+        'column_size' => '4',
+        'offset_type' => 'col-lg-offset',
+        'offset_size' => '0',
+      ),
       'middle' => NULL,
     ),
     'middle' => array(
       'style' => '-1',
     ),
     'right' => array(
-      'style' => 'default',
+      'style' => 'bootstrap_region',
     ),
     'top' => array(
       'style' => 'bootstrap_region',
